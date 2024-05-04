@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Righteous&display=swap');
+
+
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v100/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2');
+}
+
+:root {
+    --navy: rgb(43, 52, 103);
+    --light-blue: rgb(186, 215, 233);
+    --beige: rgb(252, 255, 231);
+    --red-pink: rgb(235, 69, 95);
+    --purple: rgb(68, 60, 104);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--red-pink);
+    background-color: var(--light-blue);
+    transition: margin-left .5s;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--navy);
+    display: grid;
+    grid-template-columns: 1fr 15fr 1fr;
+}
+
+.material-symbols-outlined {
+    margin: auto auto auto auto;
+    height: min-content;
+    font-family: 'Material Symbols Outlined';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    color: var(--red-pink);
+    line-height: 1;
+    letter-spacing: normal;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined:hover {
+    color: var(--navy);
+    background-color: var(--red-pink);
+    cursor: pointer;
+}
+
+header h1 {
+    color: var(--red-pink);
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--navy);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+}
+
+footer h3 {
+    text-align: center;
+    color: var(--red-pink);
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--purple);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-nav li {
+    padding: 25px 15px 25px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav li:hover {
+    background-color: var(--beige);
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: var(--red-pink);
+    font-family: 'Righteous', cursive;
+}
+
+#close {
+    display: none;
+}
+
+h2 {
+    background-color: var(--navy);
+    text-align: center;
+    margin: 0 0 0 0;
+    padding-bottom: 10px;
+    color: var(--red-pink);
+    font-family: 'Changa One', cursive;
+    font-weight: 100;
+}
+
+#searchform {
+    background-color: var(--navy);
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#searchform form {
+    margin-top: auto;
+    flex-direction: row;
+}
+
+form {
+    width: 500px;
+    background-color: var(--beige);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto auto auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type=email],
+input[type=text],
+input[type=password] {
+    width: 90%;
+    margin: 8px 0;
+    padding: 12px 22px;
+    display: inline-block;
+    border: 3px solid #EB455F;
+    box-sizing: border-box;
+}
+
+input {
+    all: unset;
+    width: 100%;
+    height: 100%;
+    color: var(--navy);
+    padding: 10px 20px;
+}
+
+input[type="submit"] {
+    background-color: var(--red-pink);
+    color: var(--beige);
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--navy);
+}
+
+p {
+    text-align: center;
+}
+
+::placeholder {
+    color: var(--red-pink);
+    opacity: 0.7;
+}
+
+#search {
+    font-size: 35px;
+    padding-right: 5px;
+}
+
+#search:hover {
+    background-color: transparent;
+}
+
+nav #genres-nav {
+    text-align: center;
+    background-color: var(--beige);
+    font-family: 'Righteous', cursive;
+    font-weight: 50px;
+    list-style-type: none;
+    font-size: 22px;
+}
+
+
+nav #genres-nav li {
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--red-pink);
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: var(--purple);
+}
+
+li a.selected {
+    text-decoration: underline;
+    color: var(--purple);
+}
+
+#imgcontainer {
+    margin-top: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 200px;
+}
+
+img {
+    object-fit: fill;
+    width: 200px;
+    height: 10%;
+}
+
+.images:hover {
+    opacity: 80%;
+}
+
+.images:hover button {
+    display: inline;
+    align-items: center;
+}
+
+.images button {
+    display: none;
+    position: absolute;
+    background-color: var(--beige);
+    color: var(--navy);
+    border-radius: 10px;
+    opacity: 100%;
+}
+
+.images form {
+    width: 200px;
+}
+
+.wantto {
+    transform: translate(0%, -400%);
+}
+
+.watched {
+    transform: translate(0%, -300%);
+}
+
+.info {
+    transform: translate(0%, -600%);
+}
+
+.review-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    margin: auto;
+
+    width: 60%;
+    border-radius: 10px;
+    border: 3px solid var(--red-pink);
+    background-color: var(--light-blue);
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 30px;
+
+}
+
+.review-modal form {
+    padding: 20px;
+}
+
+.review-modal form textarea {
+    width: 480px;
+    height: 200px;
+}
+
+button:hover {
+    background-color: var(--red-pink);
+    color: var(--beige);
+}
+
+ul.movie-list {
+    list-style: none;
+    overflow: auto;
+}
+
+ul.movie-list li {
+    display: flex;
+    padding: 10px;
+    margin: 5px auto 5px auto;
+    width: 60%;
+    border-radius: 10px;
+    border: 3px solid var(--red-pink);
+}
+
+ul.movie-list li img {
+    height: 100px;
+    width: auto;
+}
+
+ul.movie-list li div {
+    padding: 10px;
+    display: grid;
+    column-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        ". ."
+        ". ."
+        "Review Review";
+}
+
+@supports (display:grid) {
+    @media screen and (max-width:500px) {
+        body {
+            flex-wrap: nowrap;
+            align-items: stretch;
+        }
+
+        header {
+            display: block;
+        }
+
+        .material-symbols-outlined {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            width: 250px;
+        }
+    }
+}

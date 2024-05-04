@@ -1,0 +1,70 @@
+@startuml Schema
+
+skinparam{
+    backgroundColor #202020
+    defaultFontName Courier
+    defaultFontColor #FFFFFF
+
+    ClassBackgroundColor #333333
+    ClassBorderColor #AAAAAA
+    ClassHeaderBackgroundColor #444444
+    ClassFontSize 19
+    ClassFontStyle bold
+    ClassAttributeFontSize 17
+    
+
+    Linetype ortho
+    Nodesep 150
+    Ranksep 50
+    ArrowThickness 3
+    ArrowColor #FFFFFF
+  
+}
+
+title NET 3010 GoodStreams - DB Schema
+
+entity Users {
+    *user_id: INT(10)
+    --
+    email: VARCHAR(50)
+    pass: VARCHAR(255)
+    uname: VARCHAR(50)
+}
+
+entity Users_Token {
+    *(user_id, token)
+    --[Foreign Keys]--
+    user_id
+    --
+    token: VARCHAR(255)
+}
+
+entity Movies {
+    *movie_id: VARCHAR(10)
+}
+
+entity Wishlist {
+    *(user_id, movie_id)
+    --[Foreign Keys]--
+    user_id
+    movie_id
+}
+
+entity Reviews {
+    *(user_id, movie_id)
+    --[Foreign Keys]--
+    user_id
+    movie_id
+    --
+    rating: INT(1)
+    review: VARCHAR(512)
+    date: DATE()
+}
+
+Users -u-o{ Users_Token
+Users -d-o{ Wishlist
+Users -l-o{ Reviews
+Movies -o{ Wishlist
+Movies -o{ Reviews
+
+@enduml
