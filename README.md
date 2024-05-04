@@ -2,7 +2,7 @@
 
 **THIS IS NOT A SECURE APPLICATION. IT IS PURELY FOR EDUCATIONAL PURPOSES, AND IS NOT MEANT FOR ANY ACTUAL DEPLOYMENT!**
 
-NET 3010 Course Project - Website to keep track of watched movies and reviews.
+Website to keep track of watched movies and reviews.
 
 ## Description of Project
 
@@ -12,7 +12,7 @@ GoodStreams is a website that allows users to keep personalized lists of movies/
 
 - [Madeline Quang](https://github.com/madelinequang9) - Front End Designer
 - [Oreoluwa Adegbesan](https://github.com/Oreoluwa123) - Front-end Developer
-- [Sayfullah Eid](https://github.com/FusionStreak) - Team Lead | Back-end Developer
+- [Sayfullah Eid](https://github.com/FusionStreak) - Back-end Developer
 
 ## Database
 
