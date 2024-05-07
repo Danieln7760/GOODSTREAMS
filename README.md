@@ -9,7 +9,7 @@ GoodStreams is a website that allows users to keep personalized lists of movies/
 ## Team Members
 
 - [Madeline Quang](https://github.com/madelinequang9) - Front End Designer
-- [Oreoluwa Adegbesan](https://github.com/Oreoluwa123) - Front-end Developer
+- Oreoluwa Adegbesan - Front-end Developer
 - [Sayfullah Eid](https://github.com/FusionStreak) - Back-end Developer
 
 ## Database
